@@ -14,3 +14,6 @@ Route::get('/', function () {
 
 //Nueva ruta con controlador pre-definido 
 Route::get('/greeting',[GreetingController::class,'greeting']);
+
+//Ruta para Inicio de sesión
+Route::get('/login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
